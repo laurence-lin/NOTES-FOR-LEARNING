@@ -1,0 +1,11 @@
+# Linux-Operation
+
+Hard link & Soft link: In linux, we could give names to a file, called link. Link allows us to get to the file directory. 
+
+  hard link: give multiple names to single file. 
+  
+  soft link: Give a special file that pointed to another file, this file could cross different OS.
+      
+       ln -s /file-directory-to-link /file-directory-to-create-the-link
+   
+    

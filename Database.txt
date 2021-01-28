@@ -1,0 +1,14 @@
+# Database
+
+
+SQL & NoSQL: 
+
+SQL: ex. MySQL, PostgreSQL
+
+NoSQL: ex. MongoDB
+
+SQL: traditional relational database, different database are connected by key value.
+
+
+
+NoSQL: Nonrelational database

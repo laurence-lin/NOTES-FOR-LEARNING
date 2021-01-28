@@ -1,0 +1,28 @@
+# Machine-learning-summary
+
+For a specific machine-learning problem, we may list a set of candidate models from 
+different trustworthy open source framework: tensorflow, sklearn, pytorch, Xgboost....
+
+Baseline model is often included to observe the dominance of a new approach. 
+
+For different frameworks, there are different ways to build pipeline (ex. tensorflow and 
+sklearn) like train and save model, so when working on various frameworks, build different framework independently helps works more fluent.
+
+Strategy design pattern: Software design pattern are constructs that define an elegant app
+roach to effectively solve software design problems, strategy design pattern is a type of behavioural design pattern.
+
+  Strategy design pattern defines a family of algorithms that may be called 
+interchangebly by clients. 
+  Client call alrogithm 1 -> call algorithm 2 -> call algorithm 1 exchanging different 
+algorithms on the same interface.
+  
+  Help of strategy design pattern for machine learning model selections: 
+     Define common behaviours and actions for different frameworks of models, for example in machine learning:
+     1. Define the base model
+     2. Fit the model
+     3. Evaluate model on some validation data, and calculate performance metrics
+     4. Save model for later use
+     5. Load model from storage to predict
+     
+     To modulize the above procedure as an abstract class object, then we could import whatever framework we use: Tensorflow, Scikit-learn, Xgboost...
+     Then we could work on different models easily by the same acthitecture. And in the future project, we could copy the same procedure and easily train on different models, without to define the multiple frameworks repeatedly.

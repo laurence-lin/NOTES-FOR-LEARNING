@@ -1,0 +1,9 @@
+# Overall_DataScience
+Some concepts and knowledges to know for data science
+
+Reliability and Stability: Important when building data science programs, when we have an APP running live.
+
+Reliability: Code working constantlly reliable and won't break down easily.
+
+Stability: Code that is immune or resistant to changes of the time and environment.
+

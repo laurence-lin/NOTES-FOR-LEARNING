@@ -1,0 +1,61 @@
+# Shell-Scipts
+Write shell scripts to automate multiple command lines at once to make execute program easier
+
+
+Write shell script in windows:
+  Shell script is the command line interpreter designed to run on UNIX shell.
+
+
+Procedure to execute shell script:
+
+1. Create a file with name.sh
+
+2. Give the permission to run script: chmod +x script.sh 
+#provide the .sh shell script file with +x attribute, which would allow the file for permission.
+
+3. Write the script
+
+4. Execute: bash script.sh or sh bash script.sh
+
+Shell script language:
+  Print out message: echo
+    Ex. echo "print text"
+    
+Multiple commands: Must separate by a space line in WSL
+    Ex. echo "first line"
+    
+        echo "Second line"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Text editor for bash shell script on windows:
+  vim, tmux
+  
+  Vim: There are four different modes in vim editor: command mode, insert mode, last line mode, visual mode.
+    Default: command mode
+    i: Insert mode, we edit the text file in this mode
+    v: visual mode
+    ESC: back to command mode
+    vim file.sh
+    
+    
+    
+    
+    
+    
+    
+
+
+
+

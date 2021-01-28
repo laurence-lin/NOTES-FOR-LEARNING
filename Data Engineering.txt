@@ -1,0 +1,68 @@
+# Data-Engineering
+
+Data streaming, Multiprocessing, Parallel processing
+
+
+Data streaming: from ETL to IDT
+
+Traditional ETL:
+
+  Developer build a database, and schema(with no downstreaming analytics knowledge)
+  
+  Data engineer write ETL script to grab data from DB from every period of time
+  
+  Disadvantage: Not real-time data streaming, latency for the data. Whenver DB schema is changed, ETL might crashed.
+  
+IDT: Intentional Data Transfer
+
+  When an event of DB occurs, would publish the fields, which would not influence the data streaming.
+  
+  Achieve real-time data streaming which is important in some data use case.
+
+
+
+
+Multi-threading & Multi-processing: Different solutions to increase the computer power of a system.
+
+1. Multithreading: Split a process into multiple threas for the system to compute, each thread is executed simultaneously, to speed up the execuation for a single process.
+
+   Each thread share a same address space.
+   
+   
+   
+   
+   
+2. Multiprocessing: Use more than one processor (ex. multi-core CPUs or GPUs) to speed up computing. Execute various process simultaneously.
+
+   Multiprocessing is classified as symmetric and asymmetric.
+   
+   Each process own a separate address space.
+   
+   Cost more time to create process comparing to multi-threading.
+   
+ 
+Parallel computing: Use multi-processor (multi-CPUs or GPUs) to run a single program to speed up the computing. Divide one job into small parts to separate processors to speed up execution. Could achieve by multi-core CPU on single computer, or single-CPU on multiple computer in a computer cluster.
+   
+   
+   
+   
+Multiprocessing packages built-in python: from multiprocessing import Process, Pipe, Queue
+
+   Usage: Make different process of the program(like functions) into python Process object, and process them with data structure type: Queue, Pipe..etc
+   
+   Advantage: The speed of overall computation time for all processes slightly improved faster
+   
+   Disadvantage: The code gets messy and hard to debug. If you don't want to change the code for only small amount of computation time improvement, don't use multiprocessing.
+   
+   
+   
+   
+
+
+
+
+
+   
+   
+   
+   
