@@ -3,9 +3,9 @@
 
 SQL & NoSQL: 
 
-SQL: ex. MySQL, PostgreSQL
+SQL: ex. MySQL, PostgreSQL, Oracle, MSSQL, MariaDB
 
-NoSQL: ex. MongoDB
+NoSQL: ex. MongoDB, Redis
 
 SQL: traditional relational database, different database are connected by key value.
 
