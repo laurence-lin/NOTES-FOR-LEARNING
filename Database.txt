@@ -1,6 +1,12 @@
 # Database
 
 
+Store file directory trees in database -- easy for retrieve the file.
+If we store directory in JSON, everytime we get a file it would scan over whole JSON, took a lot of time.
+Database have it's optimization to get the file directory.
+
+
+
 SQL & NoSQL: 
 
 SQL: ex. MySQL, PostgreSQL, Oracle, MSSQL, MariaDB
