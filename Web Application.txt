@@ -1,0 +1,88 @@
+# Web-Developement
+Web application development note: html, css, javascript
+
+In web application: Html define the webpage architecture, CSS define the layout render of webpage, Javascript define the function that how each elements in webpage works.
+
+
+HTML:
+  
+  Appearance of each html element could be modify by css. CSS has top-layout dominance for the webpage layout.
+
+  class attribute: specify the class for an HTML element.
+  
+  
+  Division: div , create different partition block in the webpage.
+  
+     Ex. <div class='partition block1'>contents inside the block</div>
+  
+  
+  Header: from h1 ~ h6, largest header to smallest header. 
+     
+     Ex. <h1 class='this is a test header'>Header name</h1>
+     
+  Paragraph: p , browser would setup a line and space for each paragraph in seperate line
+  
+     Ex. <p class='first line'>first line</p>
+     
+     
+  Form: form , enable user to input data, pass back the input to server.
+  
+     form is the container to build input sheet.
+  
+     Ex. <form> content of some input information </form>
+     
+     Label: give label appearance title for the input box
+        
+        Ex. <label class=''></label>
+     
+     Select: select , a scroll down sheet that we could select from different alternatives.
+     
+         Option: option , the options to select from the select sheet. Locate in side 'select' body.
+         
+         
+     Table:
+       <table>
+         <tbody>
+           <tr>
+             <th>  <= header of the table column name
+           </tr>
+             <td>  <= normal cell of table row content
+     
+     
+  
+   
+   
+  
+
+CSS: Define the composing and appearance style of each web elements. Could write as a .css file separate from html, or written inside .html.
+
+   Write in html: <style>
+  
+       Ex. <style> 
+              .style1 {
+                 display: block;
+              }
+           </style>
+           
+           Add to html element: Add in the class space-separate specification
+                <div class='class_object_1 style1'> content </div>
+                
+                
+       Composing of css style: Outside container & Inside items
+       Outside container attribute: display, flex-flow, justify-content, align-items
+           display: flex <= set display as flex, in order to use most of the attributes
+           flex-direction: decide the direction of composing of elements
+       
+       Inside items attribute: flex, order, align-self
+              
+          
+
+
+
+
+
+
+
+Javascript: 
+
+
