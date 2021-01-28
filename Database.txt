@@ -16,6 +16,32 @@ NoSQL: Non-relational database
 
 
 
-RDBMS: Relational database
+Selection between SQL vs. NoSQL: Depends on what our data looks like.
 
-PostgreSQL:
+Comparison of different attributes:
+
+SQL database:
+Strictly define description of structure of the database, including row, columns, index, keys. We have to define a strict schema in order to create a new database.
+For the data that each columns type and value is strictly defined and different data table relationship is well defined, SQL database is good choice.
+Allow SQL query for the data.
+
+NoSQL database:
+No description to define the structure, each data table have only one index as indicator. Could handle semi-structured data, like JSON. 
+For the data that definition of columns are not clear or unstructured, NoSQL is suitable.
+Query for NoSQL database is not easy as SQL database due to the flexible and different data type. Query for NoSQL database require preprocessing for the data, like MapReduce, XQuery, JSONiq...which may require data scientist or developers.
+
+Scaling of database:
+SQL database is designed for single server for integration, so it's not too easy to scale up. We have to add capacity on the same server to scale up the SQL database.
+NoSQL database scale horizontally, we could add more server to scale up the database. NoSQL is scalable than SQL database. Due to unstructued data, files could be stored in separate servers without being linked.
+
+
+
+
+
+
+
+
+For structured data: SQL database is suitable.
+
+
+For Unstructured data: Like image, NoSQL database is better choice.
