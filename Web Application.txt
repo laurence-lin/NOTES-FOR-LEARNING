@@ -1,7 +1,8 @@
 # Web-Developement
 Web application development note: html, css, javascript
 
-In web application: Html define the webpage architecture, CSS define the layout render of webpage, Javascript define the function that how each elements in webpage works.
+In web application: Html define the webpage architecture, CSS define the layout render of webpage, Javascript 
+define the function that how each elements in webpage works.
 
 
 HTML:
