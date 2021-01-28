@@ -11,4 +11,11 @@ SQL: traditional relational database, different database are connected by key va
 
 
 
-NoSQL: Nonrelational database
+NoSQL: Non-relational database
+
+
+
+
+RDBMS: Relational database
+
+PostgreSQL:
