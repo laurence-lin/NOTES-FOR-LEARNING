@@ -53,6 +53,14 @@ For structured data: SQL database is suitable.
 For Unstructured data: Like image, NoSQL database is better choice.
 
 MongoDB:
+  Save data records as BSON documents: Binary representation of JSON format.
+  
+  BSON format: key-value like format
+  {
+    field: value,
+    field: value
+  }
+
   1. Install MongoDB
   2. Setup the DB location and log file directory on disk
   3. Build configuration file that indicates the DB location and log directory
@@ -65,10 +73,22 @@ table            collection
 row              document
 column           field
 
+  Step to create a database to store data: 
+    Create database -> create collections -> create documents
+
   Create new collection: db.collection_name.insert()
-  Select the specific database to edit: use "database name"
+  Create new of switch to the specific database to edit: use "database name"
   Query the collection in database: first 'use' indicate database, then 'find()': db.collection_name.find()
      Set up query condition: df.collection.find({"name":{condigion: value_condition}})
+     
+  1. use new_database
+  
+  2. database.createCollection(
+         <name of collection>,
+         {
+           options: configurations to setup the documents for the collection
+         }
+  )
   
   
    
