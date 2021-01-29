@@ -37,8 +37,8 @@ For the data that definition of columns are not clear or unstructured, NoSQL is 
 Query for NoSQL database is not easy as SQL database due to the flexible and different data type. Query for NoSQL database require preprocessing for the data, like MapReduce, XQuery, JSONiq...which may require data scientist or developers.
 
 Scaling of database:
-SQL database is designed for single server for integration, so it's not too easy to scale up. We have to add capacity on the same server to scale up the SQL database.
-NoSQL database scale horizontally, we could add more server to scale up the database. NoSQL is scalable than SQL database. Due to unstructued data, files could be stored in separate servers without being linked.
+SQL database is designed for single server for integration, so it's not too easy to scale up. We have to add capacity on the same server to scale up the SQL database. Data storedin SQL database might have same type of schema(structure)
+NoSQL database scale horizontally, we could add more server to scale up the database. NoSQL is scalable than SQL database. Due to unstructued data, files could be stored in separate servers without being linked. Data stored in NoSQL database might have different type of structure(image, text...). Stored data as type JSON.
 
 
 
@@ -51,3 +51,22 @@ For structured data: SQL database is suitable.
 
 
 For Unstructured data: Like image, NoSQL database is better choice.
+
+MongoDB:
+  1. Install MongoDB
+  2. Setup the DB location and log file directory on disk
+  3. Build configuration file that indicates the DB location and log directory
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
