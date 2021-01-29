@@ -56,6 +56,20 @@ MongoDB:
   1. Install MongoDB
   2. Setup the DB location and log file directory on disk
   3. Build configuration file that indicates the DB location and log directory
+  4. Go to bin path and setup DB path: mongod.exe --dbpath set_directory_for_db.  This may show up 'waiting for connection'
+  5. Check up mongo is successfully installed: mongo.exe => open mongo shell
+  
+SQL database VS. MongoDB:
+database         database
+table            collection
+row              document
+column           field
+
+  Create new collection: db.collection_name.insert()
+  Select the specific database to edit: use "database name"
+  Query the collection in database: first 'use' indicate database, then 'find()': db.collection_name.find()
+     Set up query condition: df.collection.find({"name":{condigion: value_condition}})
+  
   
    
 
