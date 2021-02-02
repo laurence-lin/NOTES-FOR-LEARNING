@@ -98,6 +98,11 @@ column           field
   )
   
   
+  Start using mongoDB:
+  1. Start mongoDB server: mongod.exe --dbpath path
+  2. Connect to DB server: mongo.exe
+  Start!
+  
    
 
 
