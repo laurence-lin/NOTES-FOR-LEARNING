@@ -53,6 +53,13 @@ For structured data: SQL database is suitable.
 For Unstructured data: Like image, NoSQL database is better choice.
 
 MongoDB:
+  DB architecture:
+     MongoDB server: multiple database
+     Database: Psyhical container for multiple collection. 
+     Collection: group of documents. Equalevant to RDBMS table. Don't need a schema.
+     Documents: key-value pair. All documents in collection should have similar use. Dynamic schema: documents in same collection could have different fields or structure.
+     
+
   Save data records as BSON documents: Binary representation of JSON format.
   
   BSON format: key-value like format
