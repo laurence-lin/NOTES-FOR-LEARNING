@@ -1,0 +1,21 @@
+
+Traditional Time Series Statistic model: AR, MA, ARMA, ARIMA
+
+AR: auto-regressive model, assume current state of variable is influenced by history state
+
+X_t = C + sigma(i=1, p)(tou_i * X_t-i) + epsilon_t
+
+tou_1, tou_2 ... tou_P = parameters of model, C = constant, epsilon_t = white noise, P = order of the past value influence
+
+
+AR Model view the current state value as the linear combination of past state value.
+
+
+
+MA: moving average model, 
+
+X_t = mu + epsilon_t + theta_1 * epsilon_t-1 + ... + theta_q * epsilon_t-q
+
+mu: mean of series, theta_1 ~ theta_q: parameter of model, epsilon: white noise error terms
+
+
