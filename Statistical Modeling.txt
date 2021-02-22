@@ -1,4 +1,9 @@
 
+
+
+Prediction: Methods and Implementation
+https://otexts.com/fppcn/what-can-be-forecast.html
+
 Traditional Time Series Statistic model: AR, MA, ARMA, ARIMA
 
 AR: auto-regressive model, assume current state of variable is influenced by history state
@@ -12,7 +17,7 @@ AR Model view the current state value as the linear combination of past state va
 
 
 
-MA: moving average model, 
+MA: moving average model, instead of using historical data as base for current state prediction, it use the weight combination of historical error noise to predict the future value.
 
 X_t = mu + epsilon_t + theta_1 * epsilon_t-1 + ... + theta_q * epsilon_t-q
 
