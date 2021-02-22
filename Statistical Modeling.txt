@@ -24,3 +24,7 @@ X_t = mu + epsilon_t + theta_1 * epsilon_t-1 + ... + theta_q * epsilon_t-q
 mu: mean of series, theta_1 ~ theta_q: parameter of model, epsilon: white noise error terms
 
 
+ARMA: auto-regressive moving-average model, combine AR and MA model together
+ARMA(p, q) contains p auto-regressive term and q moving-average term, which could be presented as:
+
+X_t = C + epsilon_t + sigma(i=1, p)(tou_i * X_t-i) + sigma(j=0,q)(theta_j * epsilon_t-j)
