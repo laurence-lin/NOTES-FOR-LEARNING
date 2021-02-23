@@ -1,0 +1,10 @@
+
+Abstract class: 讓我們對於建立的class更嚴格的檢查. 
+  如: 我們希望繼承"動物"class的子類別都有"born"和"eat"兩種method, 若建立了卻沒有這兩種method則會出現錯誤. 
+  則可使用abc.abstractclassmethod對parent class method進行屬性設定:
+    class Animal():
+       @abc.abstractclassmethod
+       def born():
+       def eat():
+       
+   則建立class dog(Animal)時必須建立born和eat method, 否則出現錯誤
