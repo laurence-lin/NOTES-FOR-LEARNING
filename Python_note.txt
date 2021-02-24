@@ -8,3 +8,17 @@ Abstract class: 讓我們對於建立的class更嚴格的檢查.
        def eat():
        
    則建立class dog(Animal)時必須建立born和eat method, 否則出現錯誤
+   
+   
+   
+   
+   
+Hash 雜湊:
+  Convert variant-length input value input fixed length hash value.
+  Hash function 將data進行湊後的到Hash value, 原始data和 hash value的對應dictionary 稱為 hash table.
+  Hash function 須滿足3條件:
+      1. Same input, same output
+      2. Output of hash value must be non-invertable
+      3. Hash value must have fixed lenght no matter how long is the input
+      
+  著名Hash算法: MD5, SHA, ...
