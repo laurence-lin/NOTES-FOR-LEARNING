@@ -80,14 +80,27 @@ CSS: Define the composing and appearance style of each web elements. Could write
        
        Inside items attribute: flex, order, align-self
               
-          
+              
+              
+Button:
+    (Combine with APP)
+    Action when pressed button:
+        Direct to new page:
+            <button action='/new_page_url' method='post'>
 
-
-
+        Run script:
+            <button 
 
 
 
 
 Javascript: 
+
+
+
+AJAX: 網頁不須重新整理即可跟server溝通, 交換資料
+   資料返回格式通常為: html, xml, json
+
+
 
 
