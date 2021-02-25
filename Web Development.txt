@@ -31,6 +31,10 @@ HTML:
      form is the container to build input sheet.
   
      Ex. <form> content of some input information </form>
+        Usually used with GET or POST method, allow user to interact with web server: ex. send a message to server
+        <form method='post'>
+           <input text>
+           
      
      Label: give label appearance title for the input box
         
