@@ -1,3 +1,8 @@
+將當前專案所用到的套件輸出為requirements.txt:
+Python 有內建工具可自動打包用到的套件:
+freeze (較大)
+pipreqs: 較輕便
+
 
 Abstract class: 讓我們對於建立的class更嚴格的檢查. 
   如: 我們希望繼承"動物"class的子類別都有"born"和"eat"兩種method, 若建立了卻沒有這兩種method則會出現錯誤. 
