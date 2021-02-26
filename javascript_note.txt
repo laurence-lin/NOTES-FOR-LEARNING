@@ -2,13 +2,18 @@ Javascript is a useful tools often used to implemenet functions for web applicat
 
 In python selenium test: we could use driver.execute_script("javascript command") to execute javascript for web driver.
 
-Get the browser scroll location:
+Get the browser scroll location: height to the top of screen display region
   window.pageXOffset, window.pageYOffset
   
 Get total scroll height in pixels:
   document.body.scrollHeight
+  
+Scroll window to specific height:
+  window.scrollTo(x_coordinate, y_coordinate)
 
-
+Webpage innerheight:
+  The height of screen display region may not start from zero. innerHeight presents the height of the display screen region
+  window.innerHeight
 
 
 
