@@ -1,0 +1,14 @@
+Javascript is a useful tools often used to implemenet functions for web applications, so while automatic web scraping it's also useful.
+
+In python selenium test: we could use driver.execute_script("javascript command") to execute javascript for web driver.
+
+Get the browser scroll location:
+  window.pageXOffset, window.pageYOffset
+  
+Get total scroll height in pixels:
+  document.body.scrollHeight
+
+
+
+
+
