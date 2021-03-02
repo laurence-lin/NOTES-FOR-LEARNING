@@ -7,5 +7,11 @@ Hard link & Soft link: In linux, we could give names to a file, called link. Lin
   soft link: Give a special file that pointed to another file, this file could cross different OS.
       
        ln -s /file-directory-to-link /file-directory-to-create-the-link
+       
+       
+       
+       
+Display csv file in linux cmd:
+    column -s, -t < file.csv 
    
     
