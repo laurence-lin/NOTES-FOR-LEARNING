@@ -14,3 +14,17 @@ Sync: 平舖直述的執行每一步驟程式, 一個步驟執行完在進到下
 Async: 
    優點: 執行效率高, 省時間
    缺點: 占用更多硬體資源, 且不利於對程式流程進行控制
+   
+   
+   
+   
+   
+   
+   
+Work with PostgreSQL: Npgsql 工具
+
+安裝並在IDE中使用: Visual Studio
+在visual studio的c#專案資料夾中執行 dotnet Npgsql安裝
+即可於專案內 using Npgsql
+
+
