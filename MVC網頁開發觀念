@@ -1,3 +1,23 @@
+MVC: Model, View, Controller
+
+Controller 控制網頁後端程式邏輯
+View 控制網頁呈現內容(即html部分)
+
+
+
+Controller: 內含 .cs 檔(C#), 控制以後端的溝通工作
+
+
+
+
+View: 內含 .cshtml檔, 可編輯html內容, 控制網頁的呈現
+
+
+
+
+Razor: 一種標記語法, 將server程式遷到網頁內容的標記語法. 包含C#, html
+轉乘C#轉乘C#支援C#, 使用@符號將html轉乘C#. Razor評估C#運算後, 在html加以呈現。
+在.cshtml中撰寫Razor標記的html, 以和C#溝通
 
 
 
