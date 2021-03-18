@@ -5,6 +5,9 @@ Docker Image的概念, 適用範圍, 操作筆記
   
 執行Container環境:
   docker container start container_name
+  
+停止Container:
+  docker container stop container_name -t 5
 
 
 Docker runs on Linux containers. On windows, to run docker we need Linux kernel to run Linux containers.
