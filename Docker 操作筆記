@@ -2,6 +2,9 @@ Docker Image的概念, 適用範圍, 操作筆記
 
 建立 Container執行image環境:
   docker container create --name container_name  -e 設定參數
+  
+執行Container環境:
+  docker container start container_name
 
 
 Docker runs on Linux containers. On windows, to run docker we need Linux kernel to run Linux containers.
