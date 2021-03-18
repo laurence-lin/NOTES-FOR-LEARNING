@@ -1,0 +1,85 @@
+Docker Image的概念, 適用範圍, 操作筆記
+
+建立 Container執行image環境:
+  docker container create --name container_name  -e 設定參數
+
+
+Docker runs on Linux containers. On windows, to run docker we need Linux kernel to run Linux containers.
+Official solution: Hyper-v on Windows Pro, Enterprise, Education contains hyper-v.
+For windows home:
+   Communicate with docker in Linux VM on Windows
+   在Windows端, docker client 用 ssh和 Linux VM 的 docker engine溝通. Run docker images 在 Linux container中完成.
+   After installed WSL 2 and Docker desktop for windows, enable using WSL 2 backend in the docker-settings. Check docker version:
+      docker — version
+
+Run containers with docker: 
+    Docker first search for docker image in site, if not found then it by default search on dockerhub, which is the github for docker, contains lots of global docker available online. After search on dockerhub, it downloads image from dockerhub and execute.
+
+Run a image:
+    docker run docker-image
+    docker container run docker-image
+  
+Show all the containers running:
+   docker container ls
+
+Show all docker existing images:
+   docker images
+
+Build docker image:
+   撰寫Dockerfile, 定義docker image環境. 須包含: 執行環境, 安裝程式等
+docker build 時會尋找Dockerfile.txt來建立docker image. Dockerfile.txt為用YAML格式撰寫的純文字檔.
+Dockerfile.txt內指令:
+
+FROM: 使用到的docker image名稱(執行環境)為基底, 如CentOS
+MAINTAINER: 標註撰寫此dockerfile的開發者資訊
+RUN: 在此docker內執行的image指令, 用於安裝及設定此image需要的東西. 如wget, tar, install等.
+ADD: 將local端檔案複製到image內. 若為壓縮檔會自行解壓縮
+ENV: 設定環境變數, 如port, host 等等. 格式: ENV NAME VALUE
+WORKDIR: 指定當前的後續工作目錄, 指定後RUN, CMD…等指令皆在此目錄下執行. 一般若不指定則會自行建立. 此目錄非local端的目錄, 而是docker image內的目錄
+COPY: 複製local文件到Image內目錄
+CMD: 和RUN相似, 定義Container啟動時執行的指令
+格式: CMD[‘command name’, ‘argv’, ‘argv’]
+
+建立 docker image:
+   建立Dockerfiles.txt後, 在目錄下build:
+      docker build <指令> <參數>
+      Docker image: 若未經輸出, image和一般檔案格式不同, 亦難以直接從電腦找出docker image file.
+
+Run docker image:
+     docker run <指令> <參數> docker-image-name
+常見指令:
+— rm: 若container原本存在, 則 remove
+— name: 自訂container名稱
+p: 設定由container port對外接到local port的mapping. 格式:
+-p "container port: local port"
+-v: mount volume of local directory to container. 在local端分享volume給container執行中的persisting data, 使container運作更順利.
+格式: -v local_directory:container_work_dir
+
+Publish docker image:
+分享所有程式檔 + Dockerfile.txt, 請對方自行build image
+上傳image至docker hub以供下載
+將image export 成檔案
+
+上傳至docker hub: 需為docker image加上帶有使用者名稱的tag
+首先登入:
+   docker login
+   docker tag image_name user_name/new_tag_name
+
+再上傳檔案:
+   docker push user_name/new_tag_name
+下載image:
+   docker pull public_image_name_on_hub
+
+觀看當前running container:
+    docker ps
+儲存image為壓縮檔:
+    docker save image_name > save_name.tar
+關閉running container:
+    docker stop container_name
+
+Docker image在running時, 會建立 container.
+移除image:
+    docker rmi image_id
+移除container:
+    docker rm container_id
+
