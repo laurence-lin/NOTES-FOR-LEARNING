@@ -1,0 +1,14 @@
+紀錄每天偶爾看到的最新演算法~~  說不定哪天會派上用場。
+
+
+
+
+
+Sharpness Aware Minimization(SAM): Google研發的算法, 目的是找出更好的計算machine learning algorithm loss的方法, 使loss平面減少local minimum, 這樣使用gradient descent時即可避免陷入local
+optimla, 造成overfitting, 使的訓練的模型更加general.
+   主要用於計算machine learning loss時, 不只用單一data point計算的loss構成loss 平面, 而是用
+
+
+
+
+
