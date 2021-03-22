@@ -6,3 +6,11 @@ Web server讓使用者連線呼叫API, 應開啟防火牆並把接受API呼叫�
 否則Single thread的話, 第二人必須等到第一人使用完API才可接著使用, 即必須排隊。
 
 
+
+
+Server架設需考慮安全性,穩定性, 效率。
+
+以Python server為例:
+   Flask: 練習用server框架, 安全性不足,穩定性不足。不是合用來做production mode.
+   
+
