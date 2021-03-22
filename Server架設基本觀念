@@ -1,0 +1,8 @@
+
+Web server應24小時運轉, 以供使用者呼叫使用。
+Web server讓使用者連線呼叫API, 應開啟防火牆並把接受API呼叫的Port給打開。
+
+為解決多個使用者同時呼叫同一個API的交通湧塞問題, Server應有處理multi-thread的能力, 一個人呼叫執行中允許第二個人呼叫同一個API。
+否則Single thread的話, 第二人必須等到第一人使用完API才可接著使用, 即必須排隊。
+
+
