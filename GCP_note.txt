@@ -1,0 +1,5 @@
+Note for different services provided on GCP
+
+
+
+BigQuery: Store data tables, fast query for large datasets
