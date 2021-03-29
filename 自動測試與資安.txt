@@ -1,0 +1,43 @@
+系統資安防護與自動測試
+
+# Automatic-Testing
+Automatic testing development for software
+
+
+Unit test:
+  Test for single function or single module.
+  
+  
+Integral Test:
+  Test whether multiple modeuls works well together, often run over whole codebase.
+  
+  
+白箱測試: 
+需知道軟體內部各function的運作流程來針對進行測試。檢查data flow和control flow是否正確，對大型程式碼來說相當複雜，多交由軟體來做。
+檢測的事項為"軟體該怎麼去做事"。
+  
+
+黑箱測試:
+又稱functional test, 不知道內部程式邏輯的情況下進行測試，即直接運行軟體來測試。測試人員只關注input, output和code running的狀況即可。
+亦檢查軟體受攻擊是否還可正常運作。
+檢測的事項為"軟體是否做了該做到的事"。
+
+
+一般測試包含white box 和black box,且使用不只一種測試工具，為找出non-overlapping error types。(Ex. Google, Facebook)
+Test integration: 測試出error後，測試工具應和開發流程結合，如每次code change即進行test, 可提高error fix的機率。最好結合developer用的IDE.
+Testing trust: 測試工具必有false positive, 有可能在right time提供wrong result. developer should have trust in the testing tools.
+
+Static analysis tool檢測可由淺至深:
+  淺至detect specific code pattern
+  深至deep analyze that reason about thread safety(single thread or multi thread) or track null pointer issues across multiple method calls.
+  不同static analysis tool針對不同error type，developer針對需要進行選擇。
+
+
+測試工具:
+SAST:static application security testing, 或static analysis, 檢查程式原始碼來發現security vulnerability漏洞, 避免APP受到攻擊。
+SAST在compile前進行, 為white box testing的一種。
+
+
+
+
+
