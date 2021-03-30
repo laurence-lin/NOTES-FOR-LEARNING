@@ -37,7 +37,15 @@ Static analysis tool檢測可由淺至深:
 SAST:static application security testing, 或static analysis, 檢查程式原始碼來發現security vulnerability漏洞, 避免APP受到攻擊。
 SAST在compile前進行, 為white box testing的一種。
 
+滲透測試:模擬駭客攻擊，演練方式測試軟體防禦安全性
 
+社交工程攻擊: 模擬日常業務行為，引誘點擊連結植入惡意程式或騙走敏感資訊
+
+網頁應用防火牆: 在應用程式前端檢查來自網路的即時訪問，若訪問可能有攻擊行為則即時阻擋。阻斷商業邏輯攻擊如DDoS。
+
+弱點掃描: 以白箱測試檢查常見的資安弱點指標: SQL injection, XSS, XXE...etc
+
+最小權限法: APP使用者只能擁有使用業務功能的最小權限，不能有管理權限。
 
 
 
