@@ -5,6 +5,8 @@ https://docs.microsoft.com/zh-tw/users/cloudskillschallenge/collections/25m3hkxz
 Practice Test
 https://www.itexams.com/exam/DP-100
 
+https://www.examtopics.com/exams/microsoft/dp-100/
+
 Notes for different tools and techinque.
 
 Web-developement
