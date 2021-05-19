@@ -1,0 +1,8 @@
+Set environment variable:
+
+Set just once:
+  set variable_name="path/to/set/directory"
+  
+Set forever:
+  setx variable_name "path/to/set/directory"
+
