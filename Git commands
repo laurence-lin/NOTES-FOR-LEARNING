@@ -1,0 +1,11 @@
+
+在local端初始化git:
+  git init
+  
+將現有目錄下檔案新增至git: git add {檔案名稱, 或用 . 代表全部}
+
+將更新程式碼commit上去: git commit -m "commit訊息"
+
+修改commit author: git config global user.name "author name" 
+   git config global user.email "user email"
+
