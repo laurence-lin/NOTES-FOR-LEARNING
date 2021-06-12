@@ -6,6 +6,7 @@
 
 將更新程式碼commit上去: git commit -m "commit訊息"
 
-修改commit author: git config global user.name "author name" 
-   git config global user.email "user email"
+修改commit author: 
+   git config --global user.name "author name" 
+   git config --global user.email "user email"
 
