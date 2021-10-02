@@ -1,0 +1,37 @@
+C++ 基本觀念
+
+C++ 編譯需要編譯器，檔名為.c
+用文字編輯器寫好後存為.c檔，再執行命令gcc file.c => 編譯完成
+編譯後
+
+std: C++的package，包含cout, cin, 宣告string等功能
+可用using namespace std匯入
+
+
+
+匯入package: using namespace Package名稱;
+
+
+
+int main(void){
+程式內容
+
+return 0;
+ //exit(0);
+}
+基本宣告，void代表此main函數不回傳return 值(通常不加也可以)，int代表C語言預設main()會回傳的資料型態。若宣告main()為其它型態會跳出警告。
+若main真的回傳int的值，則會在函式結束時依照return(0)執行exit(0).
+exit(0)的意義是回傳main的回傳值給parent函數，讓母函數知道此main函數的執行結果。
+
+當main接受輸入參數時: argv, argc
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+  printf("We have %d arguments:\n", argc);
+  for (int i = 0; i < argc; ++i) {
+    printf("[%d] %s\n", i, argv[i]);
+  }
+  return 0;
+}
+
+
+
