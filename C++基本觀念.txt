@@ -1,8 +1,9 @@
 C++ 基本觀念
 
-C++ 編譯需要編譯器，檔名為.c
-用文字編輯器寫好後存為.c檔，再執行命令gcc file.c => 編譯完成
-編譯後
+C++ 編譯需要編譯器，檔名為.cpp
+用文字編輯器寫好後存為.cpp檔，再執行命令gcc file.cpp => 編譯程式碼
+編譯後會在原路徑產生可執行檔.out，可手動設定執行檔名稱(不設定的話會有預設值): gcc file.cpp -o filename.out
+在Linux環境可直接執行: ./file.out
 
 std: C++的package，包含cout, cin, 宣告string等功能
 可用using namespace std匯入
