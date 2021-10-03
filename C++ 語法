@@ -1,1 +1,9 @@
 C++ 基本語法
+
+基本I/O:
+#include <iostream>
+
+數學運算式:
+#include <cmath>
+
+包含pow() 等數學函數
