@@ -1,0 +1,4 @@
+Notes for learning time series forecasting
+
+References: Forecasting: Principles and Practice (2nd ed) Rob J Hyndman and George Athanasopoulos
+
