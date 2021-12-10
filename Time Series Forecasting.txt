@@ -2,3 +2,5 @@ Notes for learning time series forecasting
 
 References: Forecasting: Principles and Practice (2nd ed) Rob J Hyndman and George Athanasopoulos
 
+Forecasting: Historical sequences some can be forecasted, but some cannot be predict accurately. Forecasting is to capture a specific pattern that could be estimated in the future, not an trivial events that could not be replicated occured in the past.
+
